@@ -96,7 +96,7 @@ a{
     mix-blend-mode: overlay;
 }
 footer{
-    position: absolute;
+    position: fixed;
     bottom: -14.5em;
     margin: 15em 15em 15em 2%;
     width: 100%;
