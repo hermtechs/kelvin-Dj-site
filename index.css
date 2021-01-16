@@ -50,13 +50,13 @@ a{
     font-size: clamp(2.2rem, 1.2rem, 3rem);
     text-transform: uppercase;
     line-height: 1;
-    margin-bottom: .2em;
+    margin-bottom: .5em;
 }
 .show-case h3{
     font-size: clamp(1.8rem, 1.3rem, 3rem);
     text-transform: uppercase;
     line-height: 1.1;
-    margin-bottom: .2em;
+    margin-bottom: .5em;
 }
 
 .show-case p{
