@@ -40,6 +40,7 @@ a{
     height: 100%;
     width: 100%;
     bottom: 0;
+    text-align: center;
 }
 .show-case-text .text{
     max-width: 600px;
@@ -66,16 +67,18 @@ a{
     
 }
 .show-case .btn{
+    display: inline-block;
     letter-spacing: 1.5px;
     padding: .1em;
+    margin-top: .5rem;
     border-radius: 3px;
     background: rgb(13, 13, 112);
     text-transform: uppercase;
+    text-align: center;
     font-weight: bold;
     transition: 250ms ease-in-out;
 }
 .show-case .btn:hover{
-    display: inline-block;
     transform: scale(1.1)
 }
  video{
@@ -97,7 +100,7 @@ a{
 }
 footer{
     position: fixed;
-    bottom: -14.5em;
+    bottom: -13em;
     margin: 15em 15em 15em 2%;
     width: 100%;
     display: flex;
