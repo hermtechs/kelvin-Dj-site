@@ -8,23 +8,25 @@
 
 header{
     display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    padding-left:2rem;
-    padding-right: 2rem;
-    /* background: #111; */
+    justify-content: space-around;
+    align-items: center;
     color: #fff;
     width: 100%;
     position: absolute;
-    z-index: 2;
+    z-index: 1000;
 }
-header >*{
+header >*+*{
     padding: 1em;
 }
 
 a{
     color: #fff;
+    text-decoration: none;
 }
+
+/* NAVIGATION MENU FOR SMALL SCREENS */
+
+
 .show-case-text{
     position: absolute;
     /* z-index:1000; */
@@ -35,14 +37,41 @@ a{
     align-items: center;
     padding: 2em;
     line-height: 1.5;
-    /* background: rgb(47, 30, 94); */
     height: 100%;
     width: 100%;
     bottom: 0;
-    /* background: #111; */
 }
 .show-case-text .text{
     max-width: 600px;
+    position: relative;
+    z-index:1000;
+}
+.show-case h2{
+    font-size: clamp(3rem, 1.5rem, 4rem);
+    text-transform: uppercase;
+}
+.show-case h3{
+    font-size: clamp(1.8rem, 1.3rem, 3rem);
+    text-transform: uppercase;
+}
+.show-case p{
+    font-size: clamp(2rem, 1rem 3rem);
+    letter-spacing: 1px;
+    margin-bottom: .5em;
+    
+}
+.show-case .btn{
+    letter-spacing: 1.5px;
+    padding: .1em;
+    border-radius: 3px;
+    background: rgb(13, 13, 112);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 250ms ease-in-out;
+}
+.show-case .btn:hover{
+    display: inline-block;
+    transform: scale(1.1)
 }
  video{
     position: absolute;
@@ -63,7 +92,7 @@ a{
 }
 footer{
     position: absolute;
-    bottom: -12em;
+    bottom: -14.5em;
     margin: 15em 15em 15em 2%;
     width: 100%;
     display: flex;
@@ -72,6 +101,7 @@ footer{
     align-items: center;
     /* gap: 1em; */
     font-size: 1.2rem;
+    z-index: 1000;
 }
 footer>*{
     padding-left: 1em;
